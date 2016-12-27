@@ -1,27 +1,77 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style type="text/css">
+.b{background-color: white;height: 50px;}
+</style>
 <meta charset="utf-8">
 	<title></title>
 	<script type="text/javascript">
-		var aa=new Array(4);
+	var aa=new Array(7);
+		var rr=new Array(10,10,10,10,10,10,10,10,10,10,10,10,10,10,10,10);
 		aa[0]='http://www.ycomcom.com/uploads/allimg/160524/1-160524004403.png';
-		aa[1]='http://www.ycomcom.com/uploads/allimg/160524/1-160524004403.png';
+		aa[1]='https://pic.pimg.tw/z39360933/1471161072-791572651_n.png?v=1471161073';
 		aa[2]='http://a.rimg.com.tw/s2/7/82/78/21528057750136_404_m.jpg';
-		aa[3]='http://a.rimg.com.tw/s2/7/82/78/21528057750136_404_m.jpg';
+		aa[3]='https://pic.pimg.tw/z39360933/1471160975-992383188_n.png';
+		aa[4]='https://pic.pimg.tw/z39360933/1471160882-3592583883_n.png';
+		aa[5]='https://static.mengniang.org/common/thumb/1/1e/Ch_cin_img_01.png/250px-Ch_cin_img_01.png';
+		aa[6]='https://images.plurk.com/3sDkjTm6jyFsitmjlIldkJ.jpg';
+		aa[7]='http://i.imgur.com/1YTYvEu.png';
+		
 	</script>
 </head>
-<body>
+<body onload="randomn()">
 <div>
-<input type="button" name="g" id="g1" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px;" onclick="bb(this,0)" >
-<input type="button" name="g" id="g2" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px;" onclick="bb(this,1)" >
-<input type="button" name="g" id="g3" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px;" onclick="bb(this,2)" >
-<input type="button" name="g" id="g4" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px;" onclick="bb(this,3)" >
+<input type="button" class="b" id="g1" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,0)" >
+<input type="button" class="b" id="g2" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,1)" >
+<input type="button" class="b" id="g3" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg); width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,2)" >
+<input type="button" class="b" id="g4" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,3)" >
+</div>
+<div>
+<input type="button" class="b" id="g5" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,4)" >
+<input type="button" class="b" id="g6" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,5)" >
+<input type="button" class="b" id="g7" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,6)" >
+<input type="button" class="b" id="g8" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,7)" >
+</div>
+<div>
+<input type="button" class="b" id="g9" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,8)" >
+<input type="button" class="b" id="g10" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,9)" >
+<input type="button" class="b" id="g11" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg); width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,10)" >
+<input type="button" class="b" id="g12" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,11)" >
+</div>
+<div>
+<input type="button" class="b" id="g13" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,12)" >
+<input type="button" class="b" id="g14" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,13)" >
+<input type="button" class="b" id="g15" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,14)" >
+<input type="button" class="b" id="g16" style="background-image:url(https://ygobbs.com/uploads/default/original/2X/e/ee39876b043ab5a6c06f91a8030d3fb37a3d7984.jpg);width: 100px;height: 150px;background-size:100px 150px;" onclick="bb(this,15)" >
 </div>
 <script type="text/javascript">
+function randomn(){
+	var a=0;
+	var j=0;
+	var cou=new Array(0,0,0,0,0,0,0,0);
+	for (var i = 0; i < 16; i++) {
+		while(rr[i]==10)
+		{
+		a=Math.floor(Math.random()*8);
+		if(cou[a]<2)
+		{
+			cou[a]+=1;
+			rr[i]=a;
+		}
+		
+		}
+	}
+	
+}
+
+</script>
+<script type="text/javascript">
 function bb(this1,b){
-	var ab='http://a.rimg.com.tw/s2/7/82/78/21528057750136_404_m.jpg';
-	this1.style.backgroundImage="url("+aa[b]+")";
+	//var ab='http://a.rimg.com.tw/s2/7/82/78/21528057750136_404_m.jpg';
+	//var dg=document.getElementById("asd1");
+	//	dg.innerHTML=aa[0];
+	this1.style.backgroundImage="url("+aa[rr[b]]+")";
 	//this.style.backgroundSize="300px";
 	//alert(ab);
 	}
